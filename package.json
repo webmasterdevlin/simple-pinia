@@ -1,0 +1,25 @@
+{
+  "name": "simple-pinia",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.9.1",
+    "pinia": "^2.0.23",
+    "vue": "^3.2.40",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.2",
+    "autoprefixer": "^10.4.12",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.7",
+    "vue-tsc": "^0.40.13"
+  }
+}
