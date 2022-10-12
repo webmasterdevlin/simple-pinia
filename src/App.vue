@@ -7,9 +7,7 @@ import HeaderNav from "./components/NavBar.vue";
     <HeaderNav></HeaderNav>
     <div class="container">
       <div class="vertical-center">
-        <div>
-          <router-view></router-view>
-        </div>
+        <router-view></router-view>
       </div>
     </div>
   </div>

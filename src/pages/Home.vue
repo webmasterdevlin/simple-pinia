@@ -1,13 +1,15 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+import Main from "../layouts/Main.vue";
 
 export default defineComponent({
-  name: "Home",
-  setup() {
-    return {};
-  },
+    name: "Home",
+    setup() {
+        return {};
+    },
+    components: { Main }
 });
 </script>
 <template>
-  <h1>HOME WORKS!</h1>
+  <Main>HOME WORKS!</Main>
 </template>
