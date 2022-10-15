@@ -10,7 +10,7 @@ export const useCounterStore = defineStore({
     increment() {
       this.count++;
     },
-    decrement() {
+    reset() {
       while (this.count > 0) {
         this.count--;
       }

@@ -12,9 +12,9 @@ export default defineComponent({
     const { doubleCount } = storeToRefs(useCounterStore());
 
     // store actions
-    const { increment, decrement } = useCounterStore();
+    const { increment, reset } = useCounterStore();
 
-    return { doubleCount, increment, decrement };
+    return { doubleCount, increment, reset };
   },
 });
 </script>
@@ -34,7 +34,7 @@ export default defineComponent({
           Count 2x: <span style="color: purple">{{ doubleCount }}</span>
         </h1>
         <button @click="increment">Increment +</button>
-        <button @click="decrement">Decrement -</button>
+        <button @click="reset">reset</button>
       </section>
     </div></Main
   >
