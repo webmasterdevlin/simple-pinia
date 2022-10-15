@@ -1,11 +1,7 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-export default defineComponent({
-  name: "Navbar",
-  setup() {
-    return {};
-  },
-});
+<script setup lang="ts">
+import { useCounterStore } from "../stores/counter";
+
+const storeCounter = useCounterStore();
 </script>
 
 <template>
@@ -20,10 +16,13 @@ export default defineComponent({
           <li class="nav-item me-5">
             <router-link to="/" exact class="nav-link">Home </router-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="display: flex">
             <router-link to="/features" exact class="nav-link">
               Features</router-link
             >
+            <span style="color: crimson">
+              {{ storeCounter.doubleCount }}
+            </span>
           </li>
         </ul>
       </div>
