@@ -31,7 +31,7 @@ export default defineComponent({
     >
       <section>
         <h1>
-          Count: <span style="color: purple">{{ doubleCount }}</span>
+          Count 2x: <span style="color: purple">{{ doubleCount }}</span>
         </h1>
         <button @click="increment">Increment +</button>
         <button @click="decrement">Decrement -</button>

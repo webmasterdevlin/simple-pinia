@@ -22,15 +22,14 @@ export default defineComponent({
   <Dashboard>
     <div>
       <div class="container" style="heigth: 100vh; width: 100%">
-        <h1>FEATURES WORKS!</h1>
+        <section>
+          <h1>
+            Count 2x: <span style="color: purple">{{ doubleCount }}</span>
+          </h1>
+          <button @click="increment">Increment +</button>
+          <button @click="decrement">Decrement -</button>
+        </section>
       </div>
-      <section>
-        <h1>
-          Count: <span style="color: purple">{{ doubleCount }}</span>
-        </h1>
-        <button @click="increment">Increment +</button>
-        <button @click="decrement">Decrement -</button>
-      </section>
     </div>
   </Dashboard>
 </template>

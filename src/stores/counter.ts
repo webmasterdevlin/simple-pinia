@@ -1,9 +1,10 @@
-import { defineStore } from "pinia";
+import { useLocalStorage } from "@vueuse/core";
+import { defineStore, acceptHMRUpdate } from "pinia";
 
 export const useCounterStore = defineStore({
   id: "counter",
   state: () => ({
-    count: 0,
+    count: useLocalStorage("app:count", 0),
   }),
   actions: {
     increment() {
@@ -19,3 +20,7 @@ export const useCounterStore = defineStore({
     },
   },
 });
+
+if (import.meta.hot) {
+  import.meta.hot.accept(acceptHMRUpdate(useCounterStore, import.meta.hot));
+}
