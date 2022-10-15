@@ -4,16 +4,17 @@ import { defineStore, acceptHMRUpdate } from "pinia";
 export const useCounterStore = defineStore({
   id: "counter",
   state: () => ({
-    count: useLocalStorage("app:count", 0),
+    count: 0,
+    // count: useLocalStorage("app:count", 0),
   }),
   actions: {
     increment() {
       this.count++;
     },
     reset() {
-      while (this.count > 0) {
-        this.count--;
-      }
+      this.$patch({
+        count: 0,
+      });
     },
   },
   getters: {
