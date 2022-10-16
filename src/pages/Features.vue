@@ -20,14 +20,16 @@ export default defineComponent({
 </script>
 <template>
   <Dashboard>
-    <div>
+    <div class="p-5">
       <div class="container" style="heigth: 100vh; width: 100%">
         <section>
           <h1>
             Count : <span style="color: purple">{{ doubleCount }}</span>
           </h1>
-          <button @click="increment">Increment by 2</button>
-          <button @click="reset">reset</button>
+          <button class="btn btn-primary" @click="increment">
+            Increment by 2
+          </button>
+          <button class="btn btn-danger" @click="reset">reset</button>
         </section>
       </div>
     </div>
