@@ -22,6 +22,7 @@ export const useCounterStore = defineStore({
       return state.count * 2;
     },
   },
+  persist: true,
 });
 
 if (import.meta.hot) {
