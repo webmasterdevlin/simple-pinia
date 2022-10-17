@@ -16,7 +16,7 @@ export default defineComponent({
     style="
       background-color: blanchedalmond;
       width: 100%;
-      height: 100vh;
+      height: auto;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;

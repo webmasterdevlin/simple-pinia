@@ -12,6 +12,7 @@ export const useCounterStore = defineStore({
       this.count++;
     },
     reset() {
+      // apply multiple changes at the same time
       this.$patch({
         count: 0,
       });

@@ -8,6 +8,14 @@ const routes = [
     component: Home,
   },
   {
+    path: "/posts",
+    name: "posts",
+    meta: {
+      title: "Posts",
+    },
+    component: () => import("../pages/Post.vue"),
+  },
+  {
     path: "/features",
     name: "features",
     meta: {

@@ -5,7 +5,7 @@ const storeCounter = useCounterStore();
 </script>
 
 <template>
-  <div style="width: 20vw; height: 100%; background-color: lightcyan">
+  <div style="width: 20vw; height: auto; background-color: lightcyan">
     <div
       style="
         display: flex;
