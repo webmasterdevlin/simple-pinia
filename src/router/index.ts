@@ -13,7 +13,7 @@ const routes = [
     meta: {
       title: "Posts",
     },
-    component: () => import("../pages/Post.vue"),
+    component: () => import("../pages/Posts.vue"),
   },
   {
     path: "/features",
