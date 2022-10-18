@@ -1,5 +1,6 @@
 import { defineStore, acceptHMRUpdate } from "pinia";
-import { get } from "../api/axiosConfig";
+import { ENDPOINTS } from "../api/config";
+import { get } from "../api/service";
 import { Post } from "../models/post";
 
 export const usePostStore = defineStore({
@@ -12,7 +13,7 @@ export const usePostStore = defineStore({
     async fetchPosts() {
       this.loading = true;
       try {
-        const { data } = await get<Post[]>("/posts?_limit=100");
+        const { data } = await get<Post[]>(`/${ENDPOINTS.posts}?_limit=100`);
         this.posts = data;
       } catch (error) {
         console.log(error);

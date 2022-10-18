@@ -17,7 +17,9 @@ const storeCounter = useCounterStore();
       <h2>DASHBOARD</h2>
       <div style="display: flex">
         <h2>Messages</h2>
-        <span style="color: crimson">{{ storeCounter.doubleCount }}</span>
+        <span class="mx-2" style="color: maroon; font-size: larger">{{
+          storeCounter.doubleCount
+        }}</span>
       </div>
       <h2>Analytics</h2>
       <h2>Connections</h2>

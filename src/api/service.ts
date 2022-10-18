@@ -1,7 +1,4 @@
-import axios from "axios";
-
-const baseURL = "https://jsonplaceholder.typicode.com/";
-const api = axios.create({ baseURL });
+import { api } from "./config";
 
 export async function get<T>(path: string) {
   return await api.get<T>(path);

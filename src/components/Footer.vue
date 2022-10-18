@@ -6,8 +6,8 @@ const storeCounter = useCounterStore();
 <template>
   <div>
     <footer
-      class="shadow rounded justify-content-between flex-nowrap flex-row"
-      style="background-color: dodgerblue; height: 3rem; width: 100%"
+      class="shadow squared justify-content-between flex-nowrap flex-row"
+      style="background-color: darkblue; height: 3rem; width: 100%"
     >
       <div
         class="container"
@@ -19,8 +19,8 @@ const storeCounter = useCounterStore();
           height: 100%;
         "
       >
-        <div style="color: white">copy right 2022</div>
-        <div style="color: whitesmoke">{{ storeCounter.doubleCount }}</div>
+        <div style="color: white">©2022 Devlin Duldulao - Vite + Vue + TS</div>
+        <div style="color: orange">{{ storeCounter.doubleCount }}</div>
       </div>
     </footer>
   </div>

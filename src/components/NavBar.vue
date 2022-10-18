@@ -7,7 +7,7 @@ const storeCounter = useCounterStore();
 <template>
   <div class="sticky-top">
     <nav
-      class="navbar shadow bg-white rounded justify-content-between flex-nowrap flex-row"
+      class="navbar shadow bg-white squared justify-content-between flex-nowrap flex-row"
     >
       <div class="container">
         <router-link to="/" class="navbar-brand float-left">LOGO</router-link>
