@@ -1,14 +1,5 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import LeftSideBarMenu from "../components/LeftSideBarMenu.vue";
-
-export default defineComponent({
-  name: "Dashboard",
-  setup() {
-    return {};
-  },
-  components: { LeftSideBarMenu },
-});
 </script>
 
 <template>
@@ -22,7 +13,7 @@ export default defineComponent({
       justify-content: flex-start;
     "
   >
-    <LeftSideBarMenu />
+    <left-side-bar-menu />
     <slot></slot>
   </div>
 </template>

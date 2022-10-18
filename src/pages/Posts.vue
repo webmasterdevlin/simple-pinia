@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import Dashboard from "../layouts/Dashboard.vue";
-import { storeToRefs } from "pinia";
-import { defineComponent, onMounted } from "vue";
+import { onMounted } from "vue";
 import { usePostStore } from "../stores/post";
 
 const storePost = usePostStore();
@@ -9,7 +8,6 @@ const storePost = usePostStore();
 onMounted(async () => {
   await storePost.fetchPosts();
 });
-
 </script>
 <template>
   <Dashboard>

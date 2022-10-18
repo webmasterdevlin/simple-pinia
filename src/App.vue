@@ -5,9 +5,9 @@ import Footer from "./components/Footer.vue";
 
 <template #default>
   <div style="height: 100%; width: 100%">
-    <HeaderNav></HeaderNav>
+    <header-nav></header-nav>
     <router-view></router-view>
-    <Footer></Footer>
+    <footer></footer>
   </div>
 </template>
 
