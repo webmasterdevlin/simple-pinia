@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import { storeToRefs } from "pinia";
 import { defineComponent } from "vue";
 import Main from "../layouts/Main.vue";

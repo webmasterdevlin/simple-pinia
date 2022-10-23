@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import Dashboard from "../layouts/Dashboard.vue";
 import { useCounterStore } from "../stores/counter";
 
