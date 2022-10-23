@@ -27,7 +27,7 @@ export const usePostStore = defineStore<
   id: namespace,
   state: () => ({
     loading: false,
-    posts: [] as Post[],
+    posts: [],
   }),
   actions: {
     async fetchPosts() {
@@ -44,7 +44,7 @@ export const usePostStore = defineStore<
   },
   getters: {
     doloremContent: (state) => {
-      return state.posts.filter((post: Post) => post.body.includes("dolorem"));
+      return state.posts.filter((post) => post.body.includes("dolorem"));
     },
   },
 });
