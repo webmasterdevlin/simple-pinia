@@ -23,7 +23,7 @@ export default defineComponent({
     ><div
       style="
         width: 100%;
-        lenght: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;

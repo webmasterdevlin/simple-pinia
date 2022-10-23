@@ -11,7 +11,7 @@ onMounted(async () => {
 </script>
 <template>
   <Dashboard>
-    <div class="container p-5" style="heigth: 100%; width: 100%">
+    <div class="container p-5" style="height: 100%; width: 100%">
       <section>
         <h2 v-if="storePost.loading">Loading..</h2>
         <div v-else>

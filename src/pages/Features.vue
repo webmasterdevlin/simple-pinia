@@ -7,7 +7,7 @@ const storeCounter = useCounterStore();
 <template>
   <Dashboard>
     <div class="p-5">
-      <div class="container" style="heigth: 100vh; width: 100%">
+      <div class="container" style="height: 100vh; width: 100%">
         <section>
           <h1>
             Count :

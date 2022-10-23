@@ -3,8 +3,28 @@ import { ENDPOINTS } from "../api/config";
 import { get } from "../api/service";
 import { Post } from "../models/post";
 
-export const usePostStore = defineStore({
-  id: "post",
+const namespace = "post";
+
+type StateType = {
+  loading: boolean;
+  posts: Post[];
+};
+
+type ActionsType = {
+  fetchPosts: () => Promise<void>;
+};
+
+type GettersType = {
+  doloremContent: (state: StateType) => Post[];
+};
+
+export const usePostStore = defineStore<
+  typeof namespace,
+  StateType,
+  GettersType,
+  ActionsType
+>({
+  id: namespace,
   state: () => ({
     loading: false,
     posts: [] as Post[],
@@ -24,7 +44,7 @@ export const usePostStore = defineStore({
   },
   getters: {
     doloremContent: (state) => {
-      return state.posts.filter((post) => post.body.includes("dolorem"));
+      return state.posts.filter((post: Post) => post.body.includes("dolorem"));
     },
   },
 });
