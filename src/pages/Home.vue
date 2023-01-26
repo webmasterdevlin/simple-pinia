@@ -33,11 +33,12 @@ export default defineComponent({
         <h1>
           Count : <span style="color: purple">{{ doubleCount }}</span>
         </h1>
-        <button class="btn btn-primary" @click="increment">
+        <button class="btn btn--primary" @click="increment">
           Increment by 2
         </button>
-        <button class="btn btn-danger" @click="reset">reset</button>
+        <button class="btn btn--secondary" @click="reset">reset</button>
       </section>
-    </div></Main
+    </div>
+    </Main
   >
 </template>

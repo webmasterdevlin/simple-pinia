@@ -19,7 +19,7 @@ const storeCounter = useCounterStore();
           height: 100%;
         "
       >
-        <div style="color: white">©2022 Devlin Duldulao - Vite + Vue + TS</div>
+        <div style="color: white">©2023 Devlin Duldulao - Vite + Vue + TS + Tailwind</div>
         <div style="color: orange">{{ storeCounter.doubleCount }}</div>
       </div>
     </footer>

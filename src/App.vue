@@ -11,6 +11,6 @@ import Footer from "./components/Footer.vue";
   </div>
 </template>
 
-<style>
-@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+<style lang="postcss">
+
 </style>

@@ -13,10 +13,10 @@ const storeCounter = useCounterStore();
             Count :
             <span style="color: purple">{{ storeCounter.doubleCount }}</span>
           </h1>
-          <button class="btn btn-primary" @click="storeCounter.increment">
+          <button class="btn btn--primary" @click="storeCounter.increment">
             Increment by 2
           </button>
-          <button class="btn btn-danger" @click="storeCounter.reset">
+          <button class="btn btn--secondary" @click="storeCounter.reset">
             reset
           </button>
         </section>
