@@ -5,7 +5,7 @@ const storeCounter = useCounterStore();
 </script>
 <template>
   <footer
-    class="p-4 bg-white lg shadow md:flex md:items-center md:justify-between md:p-6"
+    class="p-4 bg-white lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800"
   >
     <span class="text-sm text-gray-100 sm:text-center"
       >©2023 Devlin Duldulao - Vite + Vue + TS + Tailwind

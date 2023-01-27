@@ -6,12 +6,12 @@ const storeCounter = useCounterStore();
 
 <template>
   <aside class="left-0 w-64 transition-transform h-auto" aria-label="Sidebar">
-    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50">
+    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
       <ul class="space-y-2">
         <li>
           <router-link
             to=""
-            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <span class="ml-3">Dashboard</span>
           </router-link>
@@ -19,11 +19,11 @@ const storeCounter = useCounterStore();
         <li>
           <router-link
             to=""
-            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <span class="flex-1 ml-3 whitespace-nowrap">Kanban</span>
             <span
-              class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full"
+              class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300"
               >Pro</span
             >
           </router-link>
@@ -31,11 +31,11 @@ const storeCounter = useCounterStore();
         <li>
           <router-link
             to=""
-            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
             <span
-              class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full"
+              class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300"
               >{{ storeCounter.doubleCount }}</span
             >
           </router-link>
@@ -43,7 +43,7 @@ const storeCounter = useCounterStore();
         <li>
           <router-link
             to=""
-            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <span class="flex-1 ml-3 whitespace-nowrap">Users</span>
           </router-link>
@@ -51,7 +51,7 @@ const storeCounter = useCounterStore();
         <li>
           <router-link
             to=""
-            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <span class="flex-1 ml-3 whitespace-nowrap">Products</span>
           </router-link>
@@ -59,7 +59,7 @@ const storeCounter = useCounterStore();
         <li>
           <router-link
             to=""
-            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
           </router-link>
@@ -67,7 +67,7 @@ const storeCounter = useCounterStore();
         <li>
           <router-link
             to=""
-            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <span class="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
           </router-link>
