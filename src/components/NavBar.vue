@@ -12,7 +12,7 @@ const storeCounter = useCounterStore();
           <li class="mx-3">
             <router-link to="/" exact class="">Home</router-link>
           </li>
-          <li class="mx-3" style="display: flex">
+          <li class="flex mx-3">
             <router-link to="/features" exact> Features</router-link>
             <span
               class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-red-800 bg-red-100 rounded-full"

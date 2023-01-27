@@ -20,18 +20,10 @@ export default defineComponent({
 </script>
 <template>
   <Main
-    ><div
-      style="
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      "
-    >
+    ><div class="w-full h-full flex justify-center items-center">
       <section>
         <h1>
-          Count : <span style="color: purple">{{ doubleCount }}</span>
+          Count : <span class="text-purple-900">{{ doubleCount }}</span>
         </h1>
         <button class="btn btn--primary" @click="increment">
           Increment by 2

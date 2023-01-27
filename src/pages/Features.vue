@@ -7,11 +7,11 @@ const storeCounter = useCounterStore();
 <template>
   <Dashboard>
     <div class="p-5">
-      <div class="container" style="height: 100vh; width: 100%">
+      <div class="container h-screen w-full">
         <section>
           <h1>
             Count :
-            <span style="color: purple">{{ storeCounter.doubleCount }}</span>
+            <span class="text-purple-900">{{ storeCounter.doubleCount }}</span>
           </h1>
           <button class="btn btn--primary" @click="storeCounter.increment">
             Increment by 2

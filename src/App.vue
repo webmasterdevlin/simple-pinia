@@ -4,7 +4,7 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <template #default>
-  <div style="height: 100%; width: 100%">
+  <div class="w-full h-full">
     <HeaderNav></HeaderNav>
     <router-view></router-view>
     <Footer></Footer>

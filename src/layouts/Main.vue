@@ -1,10 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div
-    class="p-5"
-    style="background-color: lightyellow; width: 100%; height: 100vh"
-  >
+  <div class="bg-yellow-100 w-full h-screen p-5">
     <slot></slot>
   </div>
 </template>
