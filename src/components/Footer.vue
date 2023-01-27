@@ -4,26 +4,20 @@ import { useCounterStore } from "../stores/counter";
 const storeCounter = useCounterStore();
 </script>
 <template>
-  <div>
-    <footer
-      class="shadow squared justify-content-between flex-nowrap flex-row"
-      style="background-color: darkblue; height: 3rem; width: 100%"
-    >
-      <div
-        class="container"
-        style="
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          height: 100%;
-        "
-      >
-        <div style="color: white">©2023 Devlin Duldulao - Vite + Vue + TS + Tailwind</div>
-        <div style="color: orange">{{ storeCounter.doubleCount }}</div>
-      </div>
-    </footer>
-  </div>
+  <footer
+    class="p-4 bg-white lg shadow md:flex md:items-center md:justify-between md:p-6"
+  >
+    <span class="text-sm text-gray-100 sm:text-center"
+      >©2023 Devlin Duldulao - Vite + Vue + TS + Tailwind
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm sm:mt-0">
+      <li>
+        <span class="text-xl text-gray-100">{{
+          storeCounter.doubleCount
+        }}</span>
+      </li>
+    </ul>
+  </footer>
 </template>
 
 <style scoped></style>

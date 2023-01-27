@@ -39,6 +39,5 @@ export default defineComponent({
         <button class="btn btn--secondary" @click="reset">reset</button>
       </section>
     </div>
-    </Main
-  >
+  </Main>
 </template>
